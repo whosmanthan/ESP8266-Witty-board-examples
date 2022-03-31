@@ -13,8 +13,8 @@
 
   //wittyBoard as a ThingSpeak
  WiFiClient client;     //define client
-  long myChannelNumber = 1683376;
-  const char myWriteAPIKey[] = "24TJ8Z0UYKT8VVAF";
+  long myChannelNumber = "YOUR CHANNEL NUMBER";
+  const char myWriteAPIKey[] = "API KEY";
 
 
 void setup() {
@@ -27,7 +27,7 @@ void setup() {
   Serial.begin(9600);
 
   //wittyBoard with ThingSpeak
-  WiFi.begin("realme 6","0987654321");
+  WiFi.begin("WiFi_Name","WiFi_PASSWORD");
   while(WiFi.status()!= WL_CONNECTED){ //WL_IDLE_STATUS, WL_CONNECT_FAILED
     Serial.print('.');
     delay(200);
