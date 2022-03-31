@@ -20,7 +20,7 @@ void setup() {
   
 //wittyboard as hotspot/ access point
 
-  WiFi.softAP("manthan","");
+  WiFi.softAP("Hotspot_Name","Password");
   Serial.println();
   Serial.println("Witty Board Started !");
   Serial.println(WiFi.softAPIP());
