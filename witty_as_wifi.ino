@@ -20,7 +20,7 @@ void setup() {
 
 //wittyboard as WiFi/ server
 
-  WiFi.begin("realme 6","0987654321");
+  WiFi.begin("WiFi Name","WiFi Password");
   while(WiFi.status()!=WL_CONNECTED)
   {
     Serial.print('-');
@@ -30,13 +30,6 @@ void setup() {
   Serial.println("witty board connected!");
   Serial.println(WiFi.localIP());
   
-//wittyboard as hotspot/ access point
-
-//  WiFi.softAP("manthan","");
-//  Serial.println();
-//  Serial.println("Witty Board Started !");
-//  Serial.println(WiFi.softAPIP());
-//  server.begin();
 }
 
 void loop() { 
